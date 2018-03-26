@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <form>
+                <div class="form-group row">
+                    <label for="firstNameId" class="col-4 col-form-label">First Name:</label>
+                    <div class="col-8">
+                        <input class="form-control" type="text" ng-model="fname" placeholder="First Name" id="firstNameId" required="required"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastNameId" class="col-4 col-form-label">Last Name:</label>
+                    <div class="col-8">
+                        <input class="form-control" type="text" ng-model="lname" placeholder="Last Name" id="lastNameId" required="required" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="employeeId" class="col-4 col-form-label">User ID</label>
+                    <div class="col-8">
+                        <input class="form-control" type="text" ng-model="uid" placeholder="User ID" id="employeeId" required="required"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="demaptmentId" class="col-4 col-form-label">Department</label>
+                    <div class="col-8">
+                        <input class="form-control" type="text" ng-model="dept" placeholder="Department" id="demaptmentId" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="emailId" class="col-4 col-form-label">Email</label>
+                    <div class="col-8">
+                        <input class="form-control" type="email" ng-model="email" placeholder="Email" id="emailId"  required="required"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <button type="button" class="btn btn-primary" ng-click="updateEmpDetails()">Save</button> &nbsp; &nbsp;
+                    <button type="reset" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+
+	<a class="btn btn-primary" href="#create" role="button">New
+		Employee</a>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">First Name</th>
+				<th scope="col">Last Name</th>
+				<th scope="col">User ID</th>
+				<th scope="col">Email</th>
+				<th scope="col">Department</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="emp in empList">
+				<td>{{emp.firstName}}</td>
+				<td>{{emp.lastName}}</td>
+				<td>{{emp.userId}}</td>
+				<td>{{emp.email}}</td>
+				<td>{{emp.department}}</td>
+				<td><button type="button" class="btn btn-primary" ng-click="editEmployee(emp)">Edit</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
